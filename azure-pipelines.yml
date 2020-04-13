@@ -10,6 +10,13 @@ pool:
   vmImage: 'windows-2019'
 
 steps:
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    restoreSolution: '**/*.sln'
+    feedsToUse: 'select'
+    vstsFeed: '62659319-86da-4206-b774-519b1056e6d3'
+    
 - task: VSBuild@1
   inputs:
     solution: '**\*.sln'
