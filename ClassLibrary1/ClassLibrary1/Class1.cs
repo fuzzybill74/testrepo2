@@ -9,11 +9,14 @@ namespace ClassLibrary1
             return a + b;
         }
 
+<<<<<<< HEAD
         public int Mutliply(int a, int b)
         {
             return a * b;
         }
 
+=======
+>>>>>>> TestRebase
         public int Substract(int a, int b)
         {
             return a - b;
