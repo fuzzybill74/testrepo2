@@ -8,5 +8,10 @@ namespace ClassLibrary1
         {
             return a + b;
         }
+
+        public int Mutliply(int a, int b)
+        {
+            return a * b;
+        }
     }
 }
